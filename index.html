@@ -2,22 +2,174 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="The Golden Bean is a luxury coffee bar blending refined design with ecological practices. Discover crafted espresso, seasonal bites, and thoughtful sustainability."
+      content="Luxury, sustainable coffee bar. Discover The Golden Bean — refined interiors, small-batch beans, and curated moments."
     />
     <title>The Golden Bean</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">The Golden Bean</div>
+        <nav class="nav">
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#story">Our Story</a>
+          <a href="#visit">Visit</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Open navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <p class="eyebrow">Luxury Coffee Bar</p>
+            <h1>Coffee Crafted. Consciously.</h1>
+            <p class="subhead">
+              A refined, sustainable coffee experience — carefully sourced, beautifully served.
+            </p>
+            <div class="cta-row">
+              <a class="btn primary" href="#visit">Visit Us</a>
+              <a class="btn secondary" href="#story">Our Story</a>
+            </div>
+            <div class="hero-credits">
+              Photo credit: Golden-hour ceramics and natural light (placeholder).
+            </div>
+          </div>
+          <div class="hero-image" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section id="story" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Our Story</h2>
+            <p>
+              The Golden Bean is a luxury coffee bar blending refined design with ecological
+              practices. We source small-batch, traceable beans and serve them in thoughtfully
+              designed spaces—natural materials, warm neutrals, and an emphasis on slow, intentional
+              moments.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section highlights">
+        <div class="container">
+          <div class="section-header">
+            <h2>Sustainability Highlights</h2>
+            <p>Responsible sourcing, artisanal craft, and mindful hospitality.</p>
+          </div>
+          <div class="grid three">
+            <article class="card">
+              <h3>Small-batch beans</h3>
+              <p>Ethically sourced, traceable harvests with seasonal rotations.</p>
+            </article>
+            <article class="card">
+              <h3>Local partnerships</h3>
+              <p>Sustainable packaging and collaborations with nearby artisans.</p>
+            </article>
+            <article class="card">
+              <h3>Ceramic ritual</h3>
+              <p>Thoughtful ceramics and warm, minimal interiors.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="section menu">
+        <div class="container">
+          <div class="section-header">
+            <h2>Menu Teaser</h2>
+            <p>Seasonal selections of crafted espresso and light bites.</p>
+          </div>
+          <div class="grid three">
+            <article class="menu-card">
+              <div class="menu-image" aria-hidden="true"></div>
+              <div class="menu-body">
+                <h3>Golden Latte</h3>
+                <p>Honeyed espresso, oat milk, and sage-infused syrup.</p>
+                <span class="price">€4.80</span>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-image alt" aria-hidden="true"></div>
+              <div class="menu-body">
+                <h3>Single-Origin Pour Over</h3>
+                <p>Bright citrus notes with a cacao finish.</p>
+                <span class="price">€5.50</span>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-image" aria-hidden="true"></div>
+              <div class="menu-body">
+                <h3>Morning Brioche</h3>
+                <p>Butter-soft brioche with seasonal preserves.</p>
+                <span class="price">€4.20</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="visit" class="section visit">
+        <div class="container visit-grid">
+          <div>
+            <h2>Visit Us</h2>
+            <p>
+              Open daily. Find us for relaxed mornings and curated afternoons — view hours and
+              directions on our Visit page.
+            </p>
+            <div class="visit-details">
+              <div>
+                <h4>Hours</h4>
+                <p>Mon–Sun · 7:00–18:00</p>
+              </div>
+              <div>
+                <h4>Location</h4>
+                <p>Golden Avenue 12, Amsterdam</p>
+              </div>
+              <div>
+                <h4>Contact</h4>
+                <p>hello@thegoldenbean.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="map-placeholder" aria-hidden="true">Map Placeholder</div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <h3>The Golden Bean</h3>
+          <p>Luxury coffee bar with a conscious, ecological approach.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#story">Our Story</a>
+          <a href="#visit">Visit</a>
+        </div>
+        <div class="footer-note">© 2026 The Golden Bean. All rights reserved.</div>
+      </div>
+    </footer>
   </body>
 </html>
